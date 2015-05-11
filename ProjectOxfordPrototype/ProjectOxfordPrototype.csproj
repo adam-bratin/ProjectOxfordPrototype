@@ -96,6 +96,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Constants\Constants.cs" />
+    <Compile Include="Controls\ImageAnalysisUserControl.xaml.cs">
+      <DependentUpon>ImageAnalysisUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\ImageAnalysisUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -162,7 +169,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProjectOxford.Vision">
-      <HintPath>..\..\..\Downloads\Vision-SDK-CSharp\ClientLibrary\bin\Debug\Microsoft.ProjectOxford.Vision.dll</HintPath>
+      <HintPath>Prerequisites\Microsoft.ProjectOxford.Vision.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>

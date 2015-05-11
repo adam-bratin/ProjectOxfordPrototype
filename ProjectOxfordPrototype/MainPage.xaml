@@ -17,9 +17,6 @@
 
         <Button x:Name="AnalyzeImageButton" Content="Analyze" Grid.Column="0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="32" Background="Transparent" BorderBrush="White" HorizontalAlignment="Stretch" Margin="0,137,57,0" d:LayoutOverrides="Width, LeftPosition, RightPosition"/>
         <Button x:Name="GetThumbnailButton" Content="Get Thumbnail" Grid.Column="0" VerticalAlignment="Top" Foreground="White" FontSize="32" FontWeight="Bold" BorderBrush="White" Margin="0,245,0,0"/>
-        <RelativePanel x:Name="ImageAnalysisPanel" Grid.Column="1"  Visibility="{Binding DataContext.Visibility}">
-            <Image x:Name="ImageAnalysisPanelImage" Source="{Binding DataContext.Image}"></Image>
-            <ListView RelativePanel.RightOf="ImageAnalysisPanelImage"></ListView>
-        </RelativePanel>
+        
     </Grid>
 </Page>
